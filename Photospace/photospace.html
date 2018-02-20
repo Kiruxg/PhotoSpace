@@ -1,0 +1,103 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<meta name="keywords" content="Kirubel, PhotoSpace, photography">
+		<meta name="author" content="Kirubel Girma">
+		<title>PhotoSpace</title>
+		<link rel= "stylesheet" href="./css/normalize.css"/>
+		<link rel= "stylesheet" href="testcss.css"/>
+		<link rel="stylesheet" href="animsition-master/src/css/animsition.css">
+		<link rel= "stylesheet" href="./css/photo.css"/>
+		<link href="https://fonts.googleapis.com/css?family=Ropa+Sans" rel="stylesheet"> 
+		<script src="https://use.fontawesome.com/6547337e49.js"></script>
+		<script
+			src="https://code.jquery.com/jquery-3.2.1.min.js"
+			integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+			crossorigin="anonymous">
+		</script>
+		<!--<script type="text/javascript" src=".js/jquery.jcarousel.js"></script> -->
+		<script src="js/jquery.sticky.js"></script>
+		<script src="animsition-master/src/js/animsition.js"></script>
+		<script src="js/photo.js"></script>
+	</head>
+	<body class="animsition">
+		<div class="nav">
+			<a class="animsition-link" href="photospace.html"><img class="logo" src="images/johnmarshalllogo.png"/></a>
+			<ul>
+				<li><a class="animsition-link" href="photospace.html">Home</a></li>
+				<li><a class="animsition-link" href="about.html">About</a></li>
+				<li><a class="animsition-link" href="blogspace.html">BlogSpace</a></li>
+				<li><a class="animsition-link" href="contact.html">Contact</a></li>
+			
+			</ul>
+		</div>
+		<div class="header">
+		<img class="headerpic" src="images/mainpic.jpeg">
+		<h3 class="positiontext">PhotoSpace</h3>
+		<div class="social">
+			<a><i class="fa fa-facebook" aria-hidden="true"></i></a>
+			<a><i class="fa fa-instagram" aria-hidden="true"></i></a>
+			<a><i class="fa fa-linkedin-square " aria-hidden="true"></i></a>
+		</div>
+		</div>	
+		<section class="wrapper">
+		<div id="search">
+			<form action="search.php" method="post">
+				<input type="text" id="searchBar" placeholder="" value="Search..." maxlength="30"><input type="submit" id="searchBtn" value="Search"/>
+			</form>
+		</div>
+		<h2 class="headerp"><p>Gregory's PhotoSpace</p></h2>
+		<div class="photocategory" id="nature">
+			<h3 class="categorytitle">Photo by Nature</h3>
+			<div class="carousel">
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+		</div>
+		<div class="photocategory" id="city">
+			<h3 class="categorytitle">Photo by City</h3>
+			<div class="carousel">
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+		</div>
+		<h2 class="headerp"><p>Testimonials</p></h2>
+		<div class="slider testimonials" style="min-height:60%;">
+			<input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav"/>
+			<input type="radio" name="slider" title="slide2" class="slider__nav"/>
+			<input type="radio" name="slider" title="slide3" class="slider__nav"/>
+			<div class="slider__inner">
+				<div class="clientbox slider_contents">
+					<img class="testimonialpic" src="images/client1.jpg">
+					<p class="slider__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima! Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!</p>
+				</div>
+				<div class="clientbox slider_contents">
+					<img class="testimonialpic" src="images/client2.jpg">
+					<p class="slider__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima! Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!</p>
+				</div>
+				<div class="clientbox slider_contents">
+					<img class="testimonialpic" src="images/client3.jpg">
+					<p class="slider__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima! Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!</p>
+				</div>
+    
+			</div>
+		</div>
+		</section>
+		<footer>
+		<div class="footersocial social">
+			<a><i class="fa fa-facebook " aria-hidden="true"></i></a>
+			<a><i class="fa fa-instagram " aria-hidden="true"></i></a>
+			<a><i class="fa fa-linkedin-square " aria-hidden="true"></i></a>
+		</div>
+		<p>© 2018 Greg</p>
+		<p>Thank you for your visit!</p>
+		</footer>
+	</body>
+</html>
