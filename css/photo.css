@@ -1,0 +1,471 @@
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	
+	font-family: 'Ropa Sans', sans-serif;
+	line-height: 2;
+	display: block;
+}
+/* =======
+Navigation 
+======== */
+.nav{
+    width: 100%;
+    
+}
+.nav ul{
+    background-color: #B7A289;
+}
+
+.nav ul li{
+    list-style: none;
+    padding: 4px 10px;;
+    display: inline-block;
+
+}
+.toggle{
+        width: 100%;
+        padding: 10px 20px;
+        background: #998874;
+        text-align: right; 
+        color: #fff;
+        font-size: 30px;
+        display: none;
+
+    }
+ .nav li:hover{
+    background-color: #b2b2b2;
+    font-weight: 600;
+}
+.nav li a{
+	font-size: 18px;
+	padding: 10px;
+	cursor: pointer;
+	text-decoration: none;
+	color: white;
+    display: inline-block;
+    text-transform: uppercase;
+    
+    
+}
+.logo{
+	height: 35px;
+	margin: 6px 0;
+	margin-bottom: 10px;
+	float: left;
+	margin-left: 50px;
+	cursor: pointer;
+	padding: 2px;
+	background color: white;
+}
+	
+}
+.is-sticky .nav{
+	background-color: #B7A289;
+	transition: .6s ease-in;
+}
+/* =======
+Header - home
+======== */
+.header{
+	 width:100%;
+	 color:black;
+	 margin: 0;
+	 padding-bottom: 5px;
+	 font-size: 2.8rem;
+	letter-spacing: 5px;
+	position: relative;
+}
+.headerpic{
+	width: 100%;
+	height: auto;
+    max-height: 100%;
+}
+.gallery{
+    width: 250px;
+    height: 240px;
+    padding: 15px;
+    
+}
+.positioningtext{
+    font-size: 4rem;
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+	transform: translate(-50%, -50%);
+    color: #fcfaf7;
+}
+.testimonialpic{
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+}
+.headerp{
+	font-size: 30px;
+	text-align: center;
+	padding: 25px 0;
+	letter-spacing: 2px;
+}
+#name{
+	text-align: center;
+	margin: 40px 0;
+	font-size: 36px;
+	letter-spacing: 2px;
+	}
+.social{
+	text-align: center;
+	padding: 15px 0px;
+	letter-spacing: 4px;
+	font-weight: 600;
+}
+.social i:hover{
+    font-size: 32px;
+}
+.social i {
+	padding: 15px;
+    font-size: 22px;
+	cursor: pointer;
+	background-color: white;
+}
+
+.fa{
+	border-radius: 50%;
+	font-size: 10px;
+}
+#search{
+	font-size: 16px;
+	padding: 15px;
+	width: 100%;
+	margin: 25px 0;
+}
+.wrapper{
+	width: 75%;
+	margin: auto;
+}
+
+#searchBar{
+	outline: none;
+	width: 250px;
+	height: 30px;
+	border: 1px solid black;
+	border-right: none;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+#searchBtn{
+	border: 1px solid black;
+	background: #B7A289;
+	font-weight: bold;
+	cursor: pointer;
+	padding: 4.6px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	
+}
+#searchButton:hover{
+	background: #f6e049;
+	
+}
+.categorytitle{
+	margin-left: 30px;
+}
+.photocategory{
+	margin:50px auto;
+	display: block;
+}
+.testimonials{
+	text-align: center;
+	margin-bottom: 50px;
+}
+.clientbox{
+	width: 33%;
+	display: inline-block;
+
+}
+
+.clientbox{
+	width: 33%;
+	padding: 10px;
+}
+.clientbox p{
+	margin-top: 10px;
+	font-size: 12px;
+	font-family: "Open Sans",sans-serif;
+	line-height: 1.25;
+	
+}
+.headerimg{
+	 width:100%;
+	 color:black;
+	 padding: 50px;
+	 padding-bottom: 5px;
+	 background-position: center;
+	 background-attachment: relative;
+	 width: 100%;
+	 height: 400px;
+}
+footer{
+	background-color: #B7A289;
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #161616;
+	width:100%;
+}
+footer p {
+	color: black;
+	font-size: 16px;
+	text-align: center;
+} 
+.footersocial{
+	text-align: center;
+	font-size: 22px;
+	padding-right: 10px;
+	letter-spacing: 4px;
+	font-weight: 600;
+}
+.footersocial i {
+	padding: 10px;
+	cursor: pointer;
+	background-color: #B7A289;
+}
+/* =======
+About
+======== */
+
+#aboutpic{
+	background-color: white;
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	margin: auto;
+	display: block;
+	margin: 60px auto;
+}
+#aboutname{
+	font-size: 36px;
+	margin: 10px auto;
+	margin-bottom: 40px;
+	text-align: center;
+	font-weight: 600;
+}
+#description{
+	font-size: 12px;
+	font-family: "Open Sans",sans-serif;
+	text-align: center;
+	letter-spacing: 1px;
+	max-width: 500px;
+	margin: 0 auto;
+	margin-bottom: 25px;
+}
+.border{
+	border-bottom: 1px solid black;
+	width: 40%;
+	margin: auto;
+}
+/* =======
+BlogSpace
+======== */
+#articleheader{
+	font-size: 65px;
+	padding: 15px;
+	margin: 40px 0;
+	margin-left: 70px;
+	font-family: "Open Sans",sans-serif;
+}
+#blogspace{
+	font-family: "Open Sans",sans-serif;
+}
+#articleheader p{
+	font-size: 20px;
+	
+}
+#blogsocial{
+	margin: 0px;
+	padding: 0px;
+	font-size: 30px;
+	text-align: left;
+}
+#blogsocial i{
+	padding: 10px;
+	cursor: pointer;
+}
+#textwall{
+	display: block;
+	width: 100%;
+	margin: 30px auto;
+}
+#blognav{
+	display: block;
+	width: 100%;
+	border: 4px solid black;
+	margin: 50px auto;
+
+}
+.tags{
+	padding: 10px;
+	margin: 10px;
+	background-color: white; 
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 600;
+	cursor: pointer;
+	font-size: 20px;
+}
+.tags:hover{
+	background-color: #B7A289;;
+}
+#comments{
+	border: 1px solid black;
+	margin:40px auto;
+}
+/* =======
+Contact
+======== */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+button[type=button] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+label{
+    margin-top: 10px;
+    
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+button[type=button]:hover {
+    background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+
+#contact{
+	text-align: center;
+	display: block;
+	font-size: 12px;
+	font-family: "Open Sans",sans-serif;
+	border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+	margin: 50px auto;
+	width: 85%;
+}
+@media only screen and (max-width: 800px){
+	
+
+#searchBar{
+	width: 200px;
+}
+#search{
+	text-align: center;
+}
+.nav{
+        display: block;
+    }
+.nav li{
+    width: 100%;
+    background-color:#B7A289;
+    cursor: pointer;
+    text-align: center;
+    transition: all 300ms ease-in-out;
+	border-bottom: 3px solid white;
+}
+.nav ul{
+	margin: 0 auto;
+    opacity: 0.9;
+	list-style: none;
+	padding: 0px;
+	width: 100%;
+	background-color: white;
+    display: none;
+}
+.nav li a {
+	font-size: 125%;
+    text-decoration:none;
+    color: white;
+    padding: 20px 0;
+    width: 100%;
+}	
+
+.toggle{
+    display: block;
+    cursor: pointer;
+    }
+.wrapper{
+	width: 85%;
+}
+    .positioningtext{
+    font-size: 2.6rem;
+    }
+    #articleheader{
+	font-size: 50px;
+	margin: 20px;
+    padding 0;
+	font-family: "Open Sans",sans-serif;
+}
+}
+@media only screen and (max-width: 475px){
+    
+.positioningtext{
+    font-size: 1.6rem;
+    }
+    #searchBar{
+        width: 140px;
+    }
+    .headerp{
+        font-size: 105%;
+    }
+    .slider__txt{
+        font-size:20%;
+    }
+    .testimonialpic{
+	width: 150px;
+	height: 150px;
+}
+    .gallery{
+    width: 190px;
+    height: 180px;
+    padding: 20px;
+}
+    .categorytitle{
+        font-size: 95%;
+    }
+
+    .photocategory{
+        width: 70%;
+    }
+    .clientbox p{
+	margin-top: 10px;
+	font-size: 10px;
+    width: 65%;
+    margin-bottom: 15;
+    }
+    .wrapper{
+	width: 95%;
+}
+    #articleheader{
+	font-size: 40px;
+	margin: 20px;
+    padding 0;
+	font-family: "Open Sans",sans-serif;
+}
+}
