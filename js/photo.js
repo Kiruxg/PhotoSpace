@@ -16,29 +16,12 @@ $(document).ready(function () {
 			this.placeholder = 'Search...'
 		}
 	})
-  $(".animsition").animsition({
-    inClass: 'fade-in-left-sm',
-    outClass: 'fade-out-right-sm',
-    inDuration: 400,
-    outDuration: 700,
-    linkElement: '.animsition-link',
-    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
-    loading: true,
-    loadingParentElement: 'body', //animsition wrapper element
-    loadingClass: 'animsition-loading',
-    loadingInner: '', // e.g '<img src="loading.svg" />'
-    timeout: false,
-    timeoutCountdown: 5000,
-    onLoadEvent: true,
-    browser: [ 'animation-duration', '-webkit-animation-duration'],
-    // "browser" option allows you to disable the "animsition" in csase the css property in the array is not supported by your browser.
-    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
-    overlay : false,
-    overlayClass : 'animsition-overlay-slide',
-    overlayParentElement : 'body',
-    transition: function(url){ window.location.href = url; }
-  });
-
+    $('#searchBar').submit(function(){
+        
+        var current_query = $(this).value
+        
+        
+    })
     function Warning(){
            var warning = $('form').prepend('<p id="warning">Please fill in all of the areas.</p>')
         $('#warning').css('background-color', 'red')
@@ -60,16 +43,17 @@ $('.carousel').slick({
     dots: true,
   infinite: false,
   speed: 300,
-    autoplay: true,
-  slidesToShow: 4,
-  slidesToScroll: 4,
+    autoplay: false,
+    centerPadding: '0px',
+  slidesToShow: 3,
+  slidesToScroll: 3,
     arrows: false,
    responsive: [
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToShow: 2,
+        slidesToScroll: 2,
         infinite: true,
         dots: true
       }
@@ -94,15 +78,35 @@ $('.carousel').slick({
   ]
 
 
-  });
-   $('.toggle').on('click',function(){
+  })
+        $('.toggle').on('click',function(){
        console.log(3)
        $('ul').slideToggle();
-       $('ul').css('display','block')
+       $(window).on('resize',function(){
+           $('ul').css('display','block')
+       })
    })
-    $('.nav li').on("click",function(){
-        console.log(4)
+    
+    $('.nav li a').on("click",function(){
 		$('ul').slideToggle();
 })
+	
+    
+$('#comments-container').comments({
+    profilePictureURL: 'https://app.viima.com/static/media/user_profiles/user-icon.png',
+    getComments: function(success, error) {
+        var commentsArray = [{
+            id: 1,
+            created: '2017-10-01',
+            content: 'I am loving the context Greg! Thanks for following up with me after the photoshoot.',
+            profilePictureURL: 'images/client1.jpg',
+            fullname: 'Konrad H.',
+            enableEditing: true,
+            enableDeleting: true
 
+        }];
+        success(commentsArray);
+    }
+});
+    
 });

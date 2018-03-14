@@ -6,26 +6,27 @@
 		<meta name="author" content="Kirubel Girma">
 		<title>PhotoSpace</title>
 		<link rel= "stylesheet" href="./css/normalize.css"/>
-		<link rel="stylesheet" href="animsition-master/src/css/animsition.css">
           <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="commentjs/css/jquery-comments.css">
+        <link href="https://fonts.googleapis.com/css?family=Ropa+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 		<link rel= "stylesheet" href="./css/photo.css"/>
-		<link href="https://fonts.googleapis.com/css?family=Ropa+Sans" rel="stylesheet"> 
 	</head>
 	<body class="animsition">
 		<div class="nav">
 			<ul>
-				<li><a class="animsition-link" href="photospace.html">Home</a></li>
-				<li><a class="animsition-link" href="about.html">About</a></li>
-				<li><a class="animsition-link" href="blogspace.html">BlogSpace</a></li>
-				<li><a class="animsition-link" href="contact.html">Contact</a></li>
-			
+				<li><a href="photospace.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="blogspace.html">BlogSpace</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			    <li><a href="process.html">Process of Work</a></li>
 			</ul>
             <div class="toggle">
                 <i class="fas fa-bars menu"></i>
             </div>
 		</div>
 		<div id="articleheader">
-			<h3>Article Header</h3>
+			<h3>BlogSpace</h3>
 			<p style="font-size: 24px;">Written by Greg Smith</p>
 			<div class="social">
 				<a><i class="fa fa-facebook " aria-hidden="true"></i></a>
@@ -35,20 +36,18 @@
 		
 		</div>
 		<div class="border"></div>
-		<section class="wrapper">
+		<section class="wrapper" style="width:90%">
 		<div id="blogspace">
-			<div id="blognav">
-				<div class="tags">Blog #1</div>
-				<div class="tags">Blog #2</div>
-				<div class="tags">Blog #3</div>
-				<div class="tags">Blog #4</div>
-				<div class="tags">Blog #5</div>
-			</div>
-			<p id="textwall">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis mattis bibendum. Nullam fermentum neque a accumsan fringilla. Ut ut ligula at augue lacinia faucibus. Morbi ornare erat et blandit finibus. Quisque sit amet ipsum fermentum, lobortis augue nec, vestibulum risus. Morbi ornare eros quis lorem tempor, dapibus blandit augue pretium. Proin ornare ante quis nisl ornare feugiat. Maecenas lacus tellus, vehicula pharetra blandit a, consectetur sed eros. Donec eget neque quis mi porttitor iaculis id nec mauris. Proin scelerisque nibh pellentesque erat porta dignissim. Sed sit amet orci et sem facilisis egestas. Quisque venenatis eu sem quis pretium. Duis dapibus convallis orci, id tincidunt metus egestas vitae.</p>
-			
-		</div>
-		<div id="comments">Facebook comments</div>
+            <div id="content">
+            <h3 id="blogone" class="blogarticle">3 Tips for Long Exposure Photography</h3>
+                <p>If you’re a landscape photography enthusiast, mastering the art of a well-executed long exposure shot is definitely something we recommend adding to your skillset. There’s something very characteristically serene and ethereal about a smooth, well-composed long exposure image that truly helps the shot stand out amongst an extremely saturated photographic niche.Long-exposure, sometimes also referred to as time-exposure or slow-shutter photography, simply involves using a shutter speed with a longer than usual. The technique is most useful to employ when the artist is attempting to capture a scene in which the stationary elements are clear and sharp, while the moving elements surrounding are gently blurred. 
+            <p><span class="spanheader">Manual Mode</span>You’ll want to work in manual mode here for the simple fact that you’ll need control of your exposure. If you’re planning to shoot with an exposure of 30 seconds or longer, we additionally recommend switching over to bulb mode.</p>
+            <p><span class="spanheader">Tripod Use</span>This is arguably crucial. When you’re shooting long exposure, literally any even super-minor movement will be captured and magnified in the final shot. This type of image has zero tolerance for any unsteady hands, unexpected wind, or shaky arms.If you own one, we also recommend using a cable shutter release too- otherwise you might jolt the camera a bit when you click. The more motion you can eliminate, the better your outcome.</p>
+            <p><span class="spanheader">Shoot RAW</span>One of the most common issues faced by expert long exposure photographers is the unavoidable addition of extra noise in the shot. In order to minimize or avoid this, capturing RAW shots will be your safest bet, allowing you to do some post-processing fixes later on. </p>
+            </div>
+            </div>
+                <div class="border"></div>
+			<div id="comments-container">COMMENTS</div>
 		</section>
 		<footer>
 		<div class="footersocial social">
@@ -66,9 +65,8 @@
 			integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 			crossorigin="anonymous">
 		</script>
-		<script src="animsition-master/src/js/animsition.js"></script>
-        <script src="responsive-nav.js-master/responsive-nav.js"></script>
         <script type="text/javascript" src="slick-master/slick/slick.min.js"></script>
+<script type="text/javascript" src="commentjs/js/jquery-comments.js"></script>
 		<script src="js/photo.js"></script>
 	</body>
 </html>

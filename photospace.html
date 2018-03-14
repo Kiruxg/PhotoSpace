@@ -7,23 +7,21 @@
 		<title>PhotoSpace</title>
 		<link rel= "stylesheet" href="./css/normalize.css"/>
 		<link rel= "stylesheet" href="testcss.css"/>
-		<link rel="stylesheet" href="animsition-master/src/css/animsition.css">
+        <link rel= "stylesheet" href="css/style.css"/>
         <link rel="stylesheet" type="text/css" href="slick-master/slick/slick.css"/>
         <link rel="stylesheet" type="text/css" href="slick-master/slick/slick-theme.css"/>
         <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
 		<link rel= "stylesheet" href="./css/photo.css"/>
-		<link href="https://fonts.googleapis.com/css?family=Ropa+Sans" rel="stylesheet"> 
-		
+		<link href="https://fonts.googleapis.com/css?family=Ropa+Sans" rel="stylesheet">
 	</head>
-	<body class="animsition">
+	<body>
 		<div class="nav">
-                <!--<a class="animsition-link" href="photospace.html"><img class="logo" src="images/johnmarshalllogo.png"/></a> -->
-			<ul style="display:block">
-				<li><a class="animsition-link" href="photospace.html">Home</a></li>
-				<li><a class="animsition-link" href="about.html">About</a></li>
-				<li><a class="animsition-link" href="blogspace.html">BlogSpace</a></li>
-				<li><a class="animsition-link" href="contact.html">Contact</a></li>
-			
+			<ul>
+				<li><a href="photospace.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="blogspace.html">BlogSpace</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			     <li><a href="process.html">Process of Work</a></li>
 			</ul>
             <div class="toggle">
                 <i class="fas fa-bars menu"></i>
@@ -32,19 +30,30 @@
 		<div class="header">
 		<img class="headerpic" src="images/mainpic.jpeg">
 		<h3 class="positioningtext">PhotoSpace</h3>
+        </div>
 		<div class="social">
 			<a><i class="fa fa-facebook" aria-hidden="true"></i></a>
 			<a><i class="fa fa-instagram" aria-hidden="true"></i></a>
 			<a><i class="fa fa-linkedin-square " aria-hidden="true"></i></a>
 		</div>
-		</div>	
-		<section class="wrapper">
-		<div id="search">
-			<form action="search.php" method="post">
-				<input type="text" id="searchBar" placeholder="" value="Search..." maxlength="30"><input type="submit" id="searchBtn" value="Search"/>
-			</form>
+        <div id="body">
+            <div class="optin-container">
+                <div class="cta">Sign Up for my Blogs</div>
+                    <form id="form" class="form hidden">
+                         <input type="email" id="email" name="email" placeholder="johndoe@gmail.com" />
+                        <input type="submit" value="Submit" />
+                    </form> 
+    
             </div>
-		<div class="photocategory" id="nature">
+        </div>
+		<section class="wrapper">
+            <div class="search-form">
+            <form class="form-search ngen-search-form" action="" method="get">
+                <input type="text" name="q" id="search-input" class="form-search-input" placeholder="Search for photos..." dir="ltr">
+                <span id="search-trigger" class="form-search-submit"><i class="fas fa-search"></i></span> 
+            </form>
+        </div>
+		<div id="nature" class="photocategory">
 			<h3 class="categorytitle">Photo by Nature</h3>
 			<div class="carousel">
 				<img class="gallery" src="images/nature/n1.jpg">
@@ -80,15 +89,18 @@
 			<div class="slider__inner">
 				<div class="clientbox slider_contents">
 					<img class="testimonialpic" src="images/client1.jpg">
-					<p class="slider__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima! Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!</p>
+					<p class="slider__txt">"I just can't get enough of PhotoSpace. I want to get a T-Shirt with PhotoSpace on it so I can show it off to everyone. PhotoSpace is the most valuable business resource we have EVER purchased. PhotoSpace was the best investment I ever made."
+- Konrad H.</p>
 				</div>
 				<div class="clientbox slider_contents">
 					<img class="testimonialpic" src="images/client2.jpg">
-					<p class="slider__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima! Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!</p>
+					<p class="slider__txt">"PhotoSpace was worth a fortune to my company."
+- Acme Inc.</p>
 				</div>
 				<div class="clientbox slider_contents">
 					<img class="testimonialpic" src="images/client3.jpg">
-					<p class="slider__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima! Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!</p>
+					<p class="slider__txt">"PhotoSpace is both attractive and highly adaptable. I STRONGLY recommend PhotoSpace to EVERYONE interested in running a successful online business! I have gotten at least 50 times the value from PhotoSpace. No matter where you go, PhotoSpace is the coolest, most happening thing around!"
+- Ruddie X.</p>
 				</div>
     
 			</div>
@@ -108,9 +120,9 @@
 			src="https://code.jquery.com/jquery-3.2.1.min.js"
 			integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 			crossorigin="anonymous">
-		</script>
-		<script src="animsition-master/src/js/animsition.js"></script>
+        </script>
         <script type="text/javascript" src="slick-master/slick/slick.min.js"></script>
+        <script src="emailui/script.js"></script>
 		<script src="js/photo.js"></script>
 	</body>
 </html>

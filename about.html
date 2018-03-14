@@ -7,18 +7,26 @@
 		<title>PhotoSpace</title>
 		<link rel= "stylesheet" href="./css/normalize.css"/>
 		<link rel= "stylesheet" href="testcss.css"/>
-        <link rel="stylesheet" href="animsition-master/src/css/animsition.css">
           <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
 		<link rel= "stylesheet" href="./css/photo.css"/>
 		<link href="https://fonts.googleapis.com/css?family=Ropa+Sans" rel="stylesheet"> 
-	</head>
-	<body class="animsition">
+	<style>
+        #map{
+            width: 70%;
+            height: 65%;
+            margin: 0 auto;
+            margin-bottom: 100px;
+        }
+        </style>
+    </head>
+	<body>
 		<div class="nav">
 			<ul>
-				<li><a class="animsition-link" href="photospace.html">Home</a></li>
-				<li><a class="animsition-link" href="about.html">About</a></li>
-				<li><a class="animsition-link" href="blogspace.html">BlogSpace</a></li>
-				<li><a class="animsition-link" href="contact.html">Contact</a></li>
+				<li><a href="photospace.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="blogspace.html">BlogSpace</a></li>
+				<li><a href="contact.html">Contact</a></li>
+                 <li><a href="process.html">Process of Work</a></li>
 			</ul>
             <div class="toggle">
                 <i class="fas fa-bars menu"></i>
@@ -28,40 +36,18 @@
 		<img class="headerpic" src="images/aboutpic.jpeg" style="max-height:100%">
 		<h3 class="positioningtext">About me</h3>
 		</div>
-		<section id="wrapper">
+		<section class="wrapper">
 		<div id="about">
 			<img id="aboutpic" src="images/photospaceavatar.png" />
 			<p id="aboutname"> Greg Marshall</p>
 			<p id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet neque facilisis, condimentum est id, lacinia nulla. Aliquam auctor mi quis risus ultricies molestie. In hac habitasse platea dictumst. Aenean imperdiet tempor lorem eu fermentum. Pellentesque et est dui. Donec eget sem sit amet felis interdum fermentum eget non enim. Aenean vestibulum augue sit amet tellus cursus gravida. Cras metus lacus, viverra sit amet augue vitae, facilisis vehicula sapien. Quisque vel eleifend orci. Morbi nec dolor felis. Pellentesque rhoncus massa mi.</p>
 			<p id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet neque facilisis, condimentum est id, lacinia nulla. Aliquam auctor mi quis risus ultricies molestie. In hac habitasse platea dictumst. Aenean imperdiet tempor lorem eu fermentum. Pellentesque et est dui.</p>
 		</div>
-		<div class="testimonials">
-			<div class="clientbox"></div>
-			<div class="clientbox"></div>
-			<div class="clientbox"></div>
-		</div>
 		</section>
 		<div class="border"></div>
-		<h2 class="headerp"><p>Testimonials</p></h2>
-		<div class="slider testimonials">
-			<input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav"/>
-			<input type="radio" name="slider" title="slide2" class="slider__nav"/>
-			<input type="radio" name="slider" title="slide3" class="slider__nav"/>
-			<div class="slider__inner">
-				<div class="clientbox slider_contents">
-					<img class="testimonialpic" src="images/client1.jpg">
-					<p class="slider__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima! Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!</p>
-				</div>
-				<div class="clientbox slider_contents">
-					<img class="testimonialpic" src="images/client2.jpg">
-					<p class="slider__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima! Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!</p>
-				</div>
-				<div class="clientbox slider_contents">
-					<img class="testimonialpic" src="images/client3.jpg">
-					<p class="slider__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima! Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!</p>
-				</div>
-    
-			</div>
+		<h2 class="headerp"><p>Find me!</p></h2>
+		<div id="map">
+			
 		</div>
 		<footer>
 		<div class="footersocial social">
@@ -78,10 +64,49 @@
 			integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 			crossorigin="anonymous">
 		</script>
-		<script src="animsition-master/src/js/animsition.js"></script>
         <script src="responsive-nav.js-master/responsive-nav.js"></script>
         <script src="animsition-master/src/js/animsition.js"></script>
         <script type="text/javascript" src="slick-master/slick/slick.min.js"></script>
+        <script>
+        
+        function initMap() {
+        // Create a map object and specify the DOM element for display.
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 39.5114,lng: -96.0765},
+          zoom: 10
+        });/*
+        var marker = new google.maps.Marker({
+            position: coords,
+            map: map
+            
+        });
+        var infoWindow = new google.maps.InfoWindow({
+            content = '<h1>Photographer Location</h1>'
+              
+        })
+        marker.addListener('click',function(){
+            infoWindow.open(map,marker)
+            
+        })*/
+        //add marker
+            addMarker({coords:{lat: 39.5114,lng: -96.0765},content:'<h3>Welcome to Havensville</h3>'})
+            function addMarker(props){
+               var marker = new google.maps.Marker({
+                position: props.coords,
+                map: map
+            })
+               var infoWindow = new google.maps.InfoWindow({
+            content: props.content})
+                marker.addListener('click',function(){
+            infoWindow.open(map,marker)
+      })
+
+        }
+            }
+        
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgwKTLaT0HNwKcmshZm_aAYVXg2eNWcZc&callback=initMap"
+    async defer></script>
 		<script src="js/photo.js"> </script>
 	</body>
 </html>

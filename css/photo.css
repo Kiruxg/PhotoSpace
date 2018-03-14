@@ -19,14 +19,18 @@ Navigation
 }
 .nav ul{
     background-color: #B7A289;
+    font-family: 'Lobster', cursive,
 }
 
 .nav ul li{
     list-style: none;
-    padding: 4px 10px;;
     display: inline-block;
-
+    padding: 8px;
 }
+.nav ul li a{
+    padding: 10px;
+}
+
 .toggle{
         width: 100%;
         padding: 10px 20px;
@@ -42,7 +46,7 @@ Navigation
     font-weight: 600;
 }
 .nav li a{
-	font-size: 18px;
+	font-size: 16px;
 	padding: 10px;
 	cursor: pointer;
 	text-decoration: none;
@@ -79,6 +83,7 @@ Header - home
 	 font-size: 2.8rem;
 	letter-spacing: 5px;
 	position: relative;
+    text-align: center;
 }
 .headerpic{
 	width: 100%;
@@ -97,8 +102,9 @@ Header - home
     position: absolute;
     top: 50%;
     left: 50%;
-	transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     color: #fcfaf7;
+    font-family: 'Lobster', cursive;
 }
 .testimonialpic{
 	width: 180px;
@@ -110,6 +116,16 @@ Header - home
 	text-align: center;
 	padding: 25px 0;
 	letter-spacing: 2px;
+    font-family: 'Lobster', cursive;
+}
+.headerpp{
+    font-size: 50px;
+	text-align: center;
+	padding: 25px 0;
+	letter-spacing: 2px;
+    color: #fcfaf7;
+    line-height: 500px;
+    font-family: 'Lobster', cursive;
 }
 #name{
 	text-align: center;
@@ -132,47 +148,49 @@ Header - home
 	cursor: pointer;
 	background-color: white;
 }
-
+.cta{
+    font-family:'Lobster',cursive;
+    font-size: 1.5rem;
+}
 .fa{
 	border-radius: 50%;
 	font-size: 10px;
 }
-#search{
-	font-size: 16px;
-	padding: 15px;
-	width: 100%;
-	margin: 25px 0;
-}
-.wrapper{
-	width: 75%;
-	margin: auto;
-}
 
-#searchBar{
-	outline: none;
-	width: 250px;
-	height: 30px;
-	border: 1px solid black;
-	border-right: none;
-	border-top-left-radius: 10px;
-	border-bottom-left-radius: 10px;
+.search-form{
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+    margin: 50px auto;
+    width: 50%;
 }
-#searchBtn{
-	border: 1px solid black;
-	background: #B7A289;
-	font-weight: bold;
-	cursor: pointer;
-	padding: 4.6px;
-	border-top-right-radius: 10px;
-	border-bottom-right-radius: 10px;
-	
+.form-search-input{
+    height: 55px;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    padding: 0px 0px 0px 0px;
+    color: #151515;
+    transition: all 0.5s;
+
 }
-#searchButton:hover{
-	background: #f6e049;
-	
+.form-search-submit{
+    display: inline-block;
+    width: 55px;
+    height: 43px;
+    border: 0;
+    outline: 0;
+    background-color: #151515;
+    font-size: 22px;
+    color: #FFF;
+    cursor: pointer;
+    text-align: center;
 }
+ .fas{
+    padding: 10px;
+            }
 .categorytitle{
 	margin-left: 30px;
+    font-family: 'Lobster', cursive;
 }
 .photocategory{
 	margin:50px auto;
@@ -221,13 +239,13 @@ footer p {
 	color: black;
 	font-size: 16px;
 	text-align: center;
+    font-family: 'Lobster', cursive;
 } 
 .footersocial{
 	text-align: center;
 	font-size: 22px;
 	padding-right: 10px;
 	letter-spacing: 4px;
-	font-weight: 600;
 }
 .footersocial i {
 	padding: 10px;
@@ -237,7 +255,9 @@ footer p {
 /* =======
 About
 ======== */
-
+#about{
+    margin-bottom: 100px;
+}
 #aboutpic{
 	background-color: white;
 	border-radius: 50%;
@@ -259,9 +279,8 @@ About
 	font-family: "Open Sans",sans-serif;
 	text-align: center;
 	letter-spacing: 1px;
-	max-width: 500px;
+	max-width: 450px;
 	margin: 0 auto;
-	margin-bottom: 25px;
 }
 .border{
 	border-bottom: 1px solid black;
@@ -276,10 +295,10 @@ BlogSpace
 	padding: 15px;
 	margin: 40px 0;
 	margin-left: 70px;
-	font-family: "Open Sans",sans-serif;
+	font-family: 'PT Sans', sans-serif;
 }
 #blogspace{
-	font-family: "Open Sans",sans-serif;
+	font-family: 'PT Sans', sans-serif;
 }
 #articleheader p{
 	font-size: 20px;
@@ -300,33 +319,57 @@ BlogSpace
 	width: 100%;
 	margin: 30px auto;
 }
-#blognav{
-	display: block;
-	width: 100%;
-	border: 4px solid black;
-	margin: 50px auto;
 
-}
-.tags{
-	padding: 10px;
-	margin: 10px;
-	background-color: white; 
+.blogarticle{
+    font-size: 26px;
 	text-align: center;
-	text-transform: uppercase;
-	font-weight: 600;
-	cursor: pointer;
-	font-size: 20px;
+	padding: 15px;
+	letter-spacing: 2px;
+    font-family: 'Lobster', cursive;
 }
-.tags:hover{
-	background-color: #B7A289;;
+#content{
+    margin: 50px auto;
+    width: 90%;
+    text-align: center;
+    
 }
-#comments{
+#content p{
+    font-size: 15px;
+    margin: 20px;
+    margin-right: 20px;
+    text-align: left;
+    
+}
+.spanheader{
+    font-weight: 600;
+    font-size: 14px;
+    display: block;
+    text-align: left;
+    font-size: 105%;
+    padding: 10px;
+}
+
+#comments-container{
 	border: 1px solid black;
-	margin:40px auto;
+	margin:30px auto;
+    margin-top: 40px;
+    padding: 5px;
+    width: 90%;
+    
+}
+.jquery-comments ul.main li.comment .actions .action{
+    display: none;
 }
 /* =======
 Contact
 ======== */
+#specialhead{
+    background: #3E5151;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #DECBA4, #3E5151);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #DECBA4, #3E5151); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+height: 400px;
+}
+
 input[type=text], select, textarea {
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */  
@@ -362,22 +405,78 @@ button[type=button]:hover {
 	text-align: center;
 	display: block;
 	font-size: 12px;
-	font-family: "Open Sans",sans-serif;
 	border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
 	margin: 50px auto;
 	width: 85%;
 }
+
+/* =======
+The Process Page
+======== */
+.wrapper{
+    width: 75%;
+    min-height: calc(100vh - 120px);
+    margin: 0 auto;
+}
+.fab{
+    font-size: 40px;
+    cursor: pointer;
+    padding: 30px;
+    display: block;
+  color: black;
+}
+#githublink{
+    text-align: center;
+    background: #b7a98b;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+.step{
+        font-family: "Open Sans",sans-serif;
+        font-size: 12px;
+    letter-spacing: 1px;
+    margin: 20px auto;
+    text-align: center;
+    padding: 10px;
+}
+.step img{
+    height: 55%;
+    width: 40%;
+    padding: 20px;
+    margin: 0 auto;
+}
+.step p{
+    margin: 20px auto;
+}
+.step ol{
+    line-height: 3;
+}
+.step ol li ul li{
+    font-weight: 600;
+    margin-left: 50px;
+}
+.problemlist{
+    text-align: left;
+}
+.title{
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+@media only screen and (min-width: 1200px){
+  .step img{
+    height: 560px;
+    width: 510px;
+    padding: 20px;
+    margin: 0 auto;
+}  
+}
 @media only screen and (max-width: 800px){
 	
-
-#searchBar{
-	width: 200px;
-}
-#search{
-	text-align: center;
-}
 .nav{
         display: block;
     }
@@ -412,6 +511,8 @@ button[type=button]:hover {
     }
 .wrapper{
 	width: 85%;
+    margin: 0 auto;
+
 }
     .positioningtext{
     font-size: 2.6rem;
@@ -421,6 +522,12 @@ button[type=button]:hover {
 	margin: 20px;
     padding 0;
 	font-family: "Open Sans",sans-serif;
+}
+    .step img{
+    height: 60%;
+    width: 60%;
+    padding: 20px;
+    margin: 0 auto;
 }
 }
 @media only screen and (max-width: 475px){
@@ -433,19 +540,35 @@ button[type=button]:hover {
     }
     .headerp{
         font-size: 105%;
-    }
-    .slider__txt{
-        font-size:20%;
+        
     }
     .testimonialpic{
 	width: 150px;
 	height: 150px;
 }
-    .gallery{
-    width: 190px;
-    height: 180px;
-    padding: 20px;
+    .parallax-window {
+    min-height: 400px;
+    background: transparent;
 }
+    .gallery{
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+}
+    .blogarticle{
+        font-size: 100%;
+    }
+    .content{
+        width: 100%;
+        padding: 15px;
+    }
+    #comments-container{
+    width: 90%;
+    
+}
+    .search-form{
+        width: 80%;
+    }
     .categorytitle{
         font-size: 95%;
     }
@@ -467,5 +590,15 @@ button[type=button]:hover {
 	margin: 20px;
     padding 0;
 	font-family: "Open Sans",sans-serif;
+}
+    .step img{
+    height: 65%;
+    width: 80%;
+    padding: 20px;
+    margin: 0 auto;
+}
+    .headerpp{
+    font-size: 32px;
+	
 }
 }
