@@ -1,0 +1,88 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,300)
+
+// Colors
+$gray: #EEEEEE
+$orange: #FF9966
+$red: #E52B50
+$darkred: #9C2542
+$text: #212121
+$background-color: #B7A289
+
+*
+	box-sizing: border-box
+
+#body
+	background: rgb(230,230,230);
+	color: $text
+	font:
+		family: 'Source Sans Pro'
+		size: 16px
+	padding: 5rem 2rem 2rem
+	display: flex
+	justify-content: center
+	flex-flow: row wrap
+
+.optin-container
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
+	width: 30rem
+	
+.cta
+	background: $background-color
+	color: white
+	cursor: pointer
+	display: block
+	font-size: 2rem
+	line-height: 1
+	padding: 1.75rem 1rem
+	text-align: center
+	text-decoration: none
+	width: 100%
+
+	@media screen and (max-width: 600px)
+		line-height: 1.4
+		padding: 1.25rem 1rem
+
+
+#form
+	background: black
+	display: flex
+	flex-flow: row nowrap
+	padding: 2rem
+	maring: 0
+	input
+		padding: .75rem
+		margin: 0
+		&[type="email"]
+			border: none
+			font-size: 1rem
+			flex: 1
+			outline: $red 
+			&:focus
+				outline: .25rem solid $red
+		
+		&[type="submit"]
+			background: linear-gradient(lighten(#897863, 5%), lighten(#897863, 0%))
+			cursor: pointer
+			color: white
+			border: none
+			font-size: 1rem
+			margin: 0 0 0 1rem
+			padding: 0 3rem
+			transition: all .25s ease-in-out
+			&:hover
+				background: linear-gradient(lighten(#5cb85c, 6%), lighten(#5cb85c, 1%))
+
+	@media screen and (max-width: 600px)
+		flex-flow: row wrap
+		input
+			padding: 1rem !important
+			margin: 0 !important
+			flex: 100%
+			
+			&[type="submit"]
+				margin-top: 1rem !important
+	
+.hidden
+	display: none
+	
+	

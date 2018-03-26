@@ -1,0 +1,19 @@
+{
+  "name": "photospace",
+  "version": "1.0.0",
+  "description": "a portfolio piece for photography services.",
+  "main": "photo.js",
+  "scripts": {
+    "test": "npm run"
+  },
+  "author": "Kirubel Girma",
+  "license": "ISC",
+  "dependencies": {
+    "gem": "^2.4.3",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-shell": "^0.6.5",
+    "gulp-util": "^3.0.8",
+    "sass": "^1.0.0-beta.5.3"
+  }
+}

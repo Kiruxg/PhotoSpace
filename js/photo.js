@@ -23,21 +23,22 @@ $(document).ready(function () {
         
     })
     function Warning(){
-           var warning = $('form').prepend('<p id="warning">Please fill in all of the areas.</p>')
-        $('#warning').css('background-color', 'red')
-       }
+        $('.alert-danger').slideDown('fast')
+        
+    }
    $('#submit').on('click', function(event) {
-       event.preventDefault()  
+       event.preventDefault() 
+       $("body").scrollTop(0);
        var name = document.getElementById('username').value
        var email =document.getElementById('email').value
        var topic = document.getElementById('options').value
-       if (name.length == 0 || email.length == 0|| topic.length == 0) {
-           if($('#warning').length == 0){
-                Warning()
-       }
+       if (name.length == 0 || email.length == 0 || topic.length == 0) {
+           Warning()
        } else {
-           $('#warning').hide()
+           $('.alert-danger').css('display','none')
+           $('.alert-success').slideDown('fast')
        }
+       
     })
 $('.carousel').slick({
     dots: true,
@@ -79,17 +80,35 @@ $('.carousel').slick({
 
 
   })
-        $('.toggle').on('click',function(){
-       console.log(3)
-       $('ul').slideToggle();
-       $(window).on('resize',function(){
-           $('ul').css('display','block')
-       })
-   })
-    
+
+        $('.menu').on('click',function(){
+       $('ul').slideDown();
+        $(this).css('display','none')
+        $('.fa-times').css('display','block')
+   }) 
+       $('.fa-times').on('click',function(){
+           console.log(3)
+       $('ul').slideUp();
+        $('.menu').css('display','block')
+           $(this).css('display','none')
+        })
     $('.nav li a').on("click",function(){
 		$('ul').slideToggle();
 })
+       
+    
+$(window).on('resize',function(){
+           if( $(window).width() >= 785) {
+                $('ul').slideDown('fast','linear');
+               $('.menu').css('display','none')
+                $('.fa-times').css('display','block')
+           } else if( $(window).width() < 785){
+                $('ul').slideDown('fast','linear');
+               $('.menu').css('display','none')
+               $('.fa-times').css('display','block')
+           }
+       })
+
 	
     
 $('#comments-container').comments({
@@ -98,7 +117,7 @@ $('#comments-container').comments({
         var commentsArray = [{
             id: 1,
             created: '2017-10-01',
-            content: 'I am loving the context Greg! Thanks for following up with me after the photoshoot.',
+            content: 'I am loving the content Greg! Thanks for following up with me after the photo session.',
             profilePictureURL: 'images/client1.jpg',
             fullname: 'Konrad H.',
             enableEditing: true,
@@ -108,5 +127,5 @@ $('#comments-container').comments({
         success(commentsArray);
     }
 });
-    
+  
 });

@@ -68,9 +68,8 @@ Navigation
 }
 	
 }
-.is-sticky .nav{
+.nav{
 	background-color: #B7A289;
-	transition: .6s ease-in;
 }
 /* =======
 Header - home
@@ -91,7 +90,6 @@ Header - home
     max-height: 100%;
 }
 .gallery{
-    width: 250px;
     height: 240px;
     padding: 15px;
     
@@ -139,12 +137,10 @@ Header - home
 	letter-spacing: 4px;
 	font-weight: 600;
 }
-.social i:hover{
-    font-size: 32px;
-}
+
 .social i {
 	padding: 15px;
-    font-size: 22px;
+    font-size: 24px;
 	cursor: pointer;
 	background-color: white;
 }
@@ -322,7 +318,7 @@ BlogSpace
 
 .blogarticle{
     font-size: 26px;
-	text-align: center;
+    margin: 0 auto;
 	padding: 15px;
 	letter-spacing: 2px;
     font-family: 'Lobster', cursive;
@@ -369,7 +365,27 @@ background: -webkit-linear-gradient(to right, #DECBA4, #3E5151);  /* Chrome 10-2
 background: linear-gradient(to right, #DECBA4, #3E5151); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 height: 400px;
 }
-
+.alert{
+    display: none;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+        position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
 input[type=text], select, textarea {
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */  
@@ -415,7 +431,7 @@ button[type=button]:hover {
 /* =======
 The Process Page
 ======== */
-.wrapper{
+.processwrapper{
     width: 75%;
     min-height: calc(100vh - 120px);
     margin: 0 auto;
@@ -426,13 +442,6 @@ The Process Page
     padding: 30px;
     display: block;
   color: black;
-}
-#githublink{
-    text-align: center;
-    background: #b7a98b;
-    font-size: 20px;
-    font-weight: 600;
-    color: white;
 }
 .step{
         font-family: "Open Sans",sans-serif;
@@ -508,6 +517,19 @@ The Process Page
 .toggle{
     display: block;
     cursor: pointer;
+    overflow: hidden;
+    
+    }
+.toggle span{
+    display: block;
+    font-size: 30px;
+    transition: .6s;
+    }
+    .fa-times{
+        display: none;
+    }
+    .toggle span.active{
+        display: block;
     }
 .wrapper{
 	width: 85%;
@@ -557,6 +579,7 @@ The Process Page
 }
     .blogarticle{
         font-size: 100%;
+        
     }
     .content{
         width: 100%;
