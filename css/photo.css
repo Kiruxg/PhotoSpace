@@ -547,8 +547,8 @@ The Process Page
 }
     .step img{
     height: 60%;
-    width: 60%;
-    padding: 20px;
+    width: 90%;
+    padding: 10px;
     margin: 0 auto;
 }
 }
@@ -606,7 +606,7 @@ The Process Page
     margin-bottom: 15;
     }
     .wrapper{
-	width: 95%;
+	width: 100%;
 }
     #articleheader{
 	font-size: 40px;
@@ -616,12 +616,15 @@ The Process Page
 }
     .step img{
     height: 65%;
-    width: 80%;
-    padding: 20px;
+    padding: 10px;
+    width: 100%;
     margin: 0 auto;
 }
+    .processwrapper{
+    width: 95%;
+    }
     .headerpp{
-    font-size: 32px;
+    font-size: 24px;
 	
 }
 }
